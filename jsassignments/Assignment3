@@ -1,0 +1,106 @@
+QUES 1) 
+     function findareaandperimeter() {
+    var a = parseInt(prompt("enter length"));
+    var b = parseInt(prompt("enter width"));
+    console.log("area is",a*b);
+    console.log("perimeter is",2*(a+b)); 
+}
+undefined
+findareaandperimeter();
+VM2919:4 area is 108
+VM2919:5 perimeter is 42
+undefined
+
+OTHER WAY :
+
+ const length = parseFloat(prompt("Enter the length of the rectangle:"));
+const width = parseFloat(prompt("Enter the width of the rectangle:"));
+
+const area = length * width;
+const perimeter = 2 * (length + width);
+
+console.log(`The area of the rectangle is: ${area}`);
+console.log(`The perimeter of the rectangle is: ${perimeter}`);
+
+VM2305:7 The area of the rectangle is: 400
+VM2305:8 The perimeter of the rectangle is: 80
+
+
+QUES 02) TYPES OF FUNCTION 
+
+NAMED FUNCTION:
+function Calc(){
+    var add = function addition(x, y){
+        return x + y;
+    }
+    var sub = function subtraction(x, y){
+        return x - y;
+    }
+    return [add, sub];
+}
+undefined
+var h=Calc();
+undefined
+h;
+(2) [ƒ, ƒ]0: ƒ addition(x, y)1: ƒ subtraction(x, y)length: 2[[Prototype]]: Array(0)
+f[0](6,9);
+15
+f[1](99,562);
+-463
+
+
+ANONYMOUS FUNCTION:
+function Calc(){
+    var add = function(x, y){
+        return x + y;
+    }
+    var sub = function(x, y){
+        return x - y;
+    }
+    return [add, sub];
+}
+undefined
+var f = Calc();
+undefined
+f;
+(2) [ƒ, ƒ]0: ƒ (x, y)1: ƒ (x, y)length: 2[[Prototype]]: Array(0)
+f[0](2,5);
+7
+f[1](3,8);
+-5
+
+NAMED EXPRESSION FUNCTION:
+
+const factorial = function calcFactorial(num) {
+  if (num <= 1) {
+    return 1;
+  } else {
+    return num * calcFactorial(num - 1);
+  }
+};
+
+
+undefined
+const result = factorial(5);
+console.log(result);
+
+VM1956:2 120
+undefined
+
+ARROW FUNCTION:
+const addition =(x,y)=>x+y;
+undefined
+typeof addition;
+'function'
+addition(20,23);
+43
+const addition2 = (x,y)=>{
+   console.log(x,y);
+    return x+y;
+}
+undefined
+typeof addition2;
+'function'
+addition2(20,50);
+VM459:2 20 50
+70

@@ -1,0 +1,97 @@
+QUES 1)  Prime Number Compute Function
+
+
+
+function isPrime(number) {
+  
+  if (number <= 1) {
+    return false;
+  }
+
+
+  if (number <= 3) {
+    return true;
+  }
+
+  
+  const sqrtNumber = Math.floor(Math.sqrt(number));
+  for (let i = 2; i <= sqrtNumber; i++) {
+    if (number % i === 0) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+undefined
+console.log(isPrime(5));
+VM57:1 true
+undefined
+console.log(isPrime(9));
+VM76:1 false
+undefined
+
+
+QUES 2)  ArmStrong Number Compute Function
+
+
+function isArmstrongNumber(number) {
+  const numString = number.toString();
+  const numDigits = numString.length;
+  let sum = 0;
+
+  for (let digit of numString) {
+    const digitValue = parseInt(digit);
+    sum += Math.pow(digitValue, numDigits);
+  }
+
+  return sum === number;
+}
+
+undefined
+console.log(isArmstrongNumber(1634));
+VM99:1 true
+undefined
+console.log(isArmstrongNumber(54));
+VM118:1 false
+undefined
+
+
+QUES 3) add() - 0
+add(10) - 10
+add(10,20) - 30
+add(10,”20”) - 30
+add(10,”ten”) - 10
+add(10, NaN) - 10
+add(10, 20, 30 ,40, 50)- 150
+
+
+
+function add() {
+  let sum = 0;
+
+  for (let i = 0; i < arguments.length; i++) {
+    const value = parseInt(arguments[i]);
+    if (!isNaN(value)) {
+      sum += value;
+    }
+  }
+
+  return sum;
+}
+
+undefined
+console.log(add(10+'ten'));
+VM152:1 10
+undefined
+console.log(add(10, 20, 30, 40, 50));
+VM173:1 150
+undefined
+
+
+function add(){                                                                                                                                                                                      console.log(arguments.length);}
+undefined
+add (2,3,5,4,8);
+VM225:1 5
+undefined

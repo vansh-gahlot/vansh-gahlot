@@ -1,0 +1,42 @@
+QUES 1,2,3)
+const salaries =[10000,20000,30000,5400,1200,380000];
+undefined
+salaries.reduce((total,salary)=>total+(salary>=10000?salary:0),0);
+440000
+salaries.reduce((max,salary)=>max<salary?salary:max);
+380000
+salaries.reduce((count,salary)=>count+(salary>10000),0);
+3
+class employee{
+    this(id,name)
+    {this.id=id;
+     this,name=name;
+    }}
+undefined
+const id=[1001,1002,1003,1004,1005];
+undefined
+const names=['vanshika','vani','aman','ankit','vansh'];
+undefined
+
+QUES 4)
+const employees=new Array(id.length);
+for(let i=0;i<id.length;i++){
+    employee[i]=new employee(id[i],name[i]);}
+employee {}[[Prototype]]: Objectconstructor: class employee0: employee {}1: employee {}2: employee {}3: employee {}4: employee {}length: 0name: "employee"prototype: {constructor: ƒ, this: ƒ}arguments: (...)caller: (...)[[FunctionLocation]]: VM750:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[2]this: ƒ this(id,name)length: 2name: "this"arguments: (...)caller: (...)[[FunctionLocation]]: VM750:2[[Prototype]]: ƒ ()[[Scopes]]: Scopes[2][[Prototype]]: Object
+employee();
+
+Array;
+ƒ Array() { [native code] }
+employees.sort((emp1,emp2)=>{
+    let a = emp1.name.toUpperCase();
+    let b=emp2.name.toUpperCase();
+    return(a<b)?-1:((a>b)?1:0); });
+(5) [empty × 5]length: 5[[Prototype]]: Array(0)at: ƒ at()concat: ƒ concat()constructor: ƒ Array()copyWithin: ƒ copyWithin()entries: ƒ entries()every: ƒ every()fill: ƒ fill()filter: ƒ filter()find: ƒ find()findIndex: ƒ findIndex()findLast: ƒ findLast()findLastIndex: ƒ findLastIndex()flat: ƒ flat()flatMap: ƒ flatMap()forEach: ƒ forEach()includes: ƒ includes()indexOf: ƒ indexOf()join: ƒ join()keys: ƒ keys()lastIndexOf: ƒ lastIndexOf()length: 0map: ƒ map()pop: ƒ pop()push: ƒ push()reduce: ƒ reduce()reduceRight: ƒ reduceRight()reverse: ƒ reverse()shift: ƒ shift()slice: ƒ slice()some: ƒ some()sort: ƒ sort()splice: ƒ splice()toLocaleString: ƒ toLocaleString()toReversed: ƒ toReversed()toSorted: ƒ toSorted()toSpliced: ƒ toSpliced()toString: ƒ toString()unshift: ƒ unshift()values: ƒ values()with: ƒ with()Symbol(Symbol.iterator): ƒ values()Symbol(Symbol.unscopables): {at: true, copyWithin: true, entries: true, fill: true, find: true, …}[[Prototype]]: Object
+
+
+QUES 5)
+const incSalaries=salaries.map(salary=>salary+0.1*salary);
+undefined
+console.log(incSalaries);
+VM2431:1 (6) [11000, 22000, 33000, 5940, 1320, 418000]
+undefined
